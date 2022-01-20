@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: url(images/iphone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container header {
+    height: 10vh;
+    width: 100vw;
+    /* position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 99; */
+}
+
+.container header nav {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container header nav .logo {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translate(-50%,-50%);
+}
+
+.container header nav .pre-order {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-50%,-50%);
+}
+
+.container header nav .pre-order:hover {
+    color: #ccd0d2;
+    border-bottom: 1px solid #ccd0d2;
+}
+
+.container header nav .menu-lines {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.container header nav .menu-lines .line {
+    display: block;
+    height: 4px;
+    width: 80%;
+    background-color: #ccd0d2;
+    transition: all 0.4s ease-in-out;
+}
+
+.container header nav .menu-lines .line.line1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: rotate(0deg);
+    z-index: 9;
+}
+.container header nav .menu-lines .line.line2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: rotate(0deg);
+    z-index: 9;
+    opacity: 1;
+}
+.container header nav .menu-lines .line.line3 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: rotate(0deg);
+    z-index: 9;
+}
+
+.container header nav .menu {
+    height: 100vh;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    right: -40%;
+    top: 0%;
+    transition: all 0.4s ease-in-out;
+    z-index: 5;
+}
+
+.container header nav .menu ul {
+    height: 30%;
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container header nav .menu ul li {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container header nav .menu ul li a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container header nav .menu ul li a:hover {
+    background-color: #ccd0d2;
+}
+
+.container header nav .menu .menu-logo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+}
+
+.container .hero {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+}
+
+.container .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ccd0d2;
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+
+.container .hero h2 {
+    font-size: 8rem;
+    font-weight: 700;
+    width: 1000px;
+    text-align: center;
+    color: #ccd0d2;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+
+.container .hero a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 4rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+
+.container .hero a:hover {
+    background-color: white;
+    color: black;
+}
+
+.brief {
+    height: 70vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brief .brief-box {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brief .brief-box .topic {
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brief .brief-box .topic .topic-icon {
+    height: 50%;
+    width: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brief .brief-box .topic .topic-icon img {
+    height: 40px;
+}
+
+.brief .brief-box .topic .topic-detail {
+    height: 50%;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brief .brief-box .topic .topic-detail p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    width: 70%;
+}
+
+.banner {
+    height: 30vh;
+    width: 100vw;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.banner a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 700px;
+    text-align: center;
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ccd0d2;
+}
+
+.banner .btn1:hover {
+    cursor: pointer;
+    background-color: rgb(0, 255, 170);
+}
+
+.banner .btn2:hover {
+    cursor: pointer;
+    background-color: rgb(255, 230, 0);
+}
+
+.banner .btn3 {
+    cursor: not-allowed;
+}
+
+.banner .btn3:hover {
+    background-color: red;
+    color: white;
+}
