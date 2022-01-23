@@ -34,7 +34,7 @@ ul {
     background-repeat: no-repeat;
 }
 
-.container header {
+header {
     height: 10vh;
     width: 100vw;
     /* position: fixed;
@@ -43,13 +43,13 @@ ul {
     z-index: 99; */
 }
 
-.container header nav {
+header nav {
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-.container header nav .logo {
+header nav .logo {
     height: 50px;
     position: absolute;
     top: 50%;
@@ -57,7 +57,7 @@ ul {
     transform: translate(-50%,-50%);
 }
 
-.container header nav .pre-order {
+header nav .pre-order {
     font-size: 1.5rem;
     font-weight: 800;
     color: white;
@@ -67,12 +67,12 @@ ul {
     transform: translate(-50%,-50%);
 }
 
-.container header nav .pre-order:hover {
+header nav .pre-order:hover {
     color: #ccd0d2;
     border-bottom: 1px solid #ccd0d2;
 }
 
-.container header nav .menu-lines {
+header nav .menu-lines {
     height: 50px;
     width: 50px;
     position: absolute;
@@ -83,7 +83,7 @@ ul {
     cursor: pointer;
 }
 
-.container header nav .menu-lines .line {
+header nav .menu-lines .line {
     display: block;
     height: 4px;
     width: 80%;
@@ -91,14 +91,14 @@ ul {
     transition: all 0.4s ease-in-out;
 }
 
-.container header nav .menu-lines .line.line1 {
+header nav .menu-lines .line.line1 {
     position: absolute;
     top: 30%;
     left: 10%;
     transform: rotate(0deg);
     z-index: 9;
 }
-.container header nav .menu-lines .line.line2 {
+header nav .menu-lines .line.line2 {
     position: absolute;
     top: 50%;
     left: 10%;
@@ -106,7 +106,7 @@ ul {
     z-index: 9;
     opacity: 1;
 }
-.container header nav .menu-lines .line.line3 {
+header nav .menu-lines .line.line3 {
     position: absolute;
     top: 70%;
     left: 10%;
@@ -114,7 +114,7 @@ ul {
     z-index: 9;
 }
 
-.container header nav .menu {
+header nav .menu {
     height: 100vh;
     width: 40%;
     background-color: white;
@@ -125,7 +125,7 @@ ul {
     z-index: 5;
 }
 
-.container header nav .menu ul {
+header nav .menu ul {
     height: 30%;
     width: 100%;
     margin-top: 10rem;
@@ -133,7 +133,7 @@ ul {
     flex-direction: column;
 }
 
-.container header nav .menu ul li {
+header nav .menu ul li {
     height: 25%;
     width: 100%;
     display: flex;
@@ -141,7 +141,7 @@ ul {
     align-items: center;
 }
 
-.container header nav .menu ul li a {
+header nav .menu ul li a {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 2px;
@@ -153,11 +153,11 @@ ul {
     align-items: center;
 }
 
-.container header nav .menu ul li a:hover {
+header nav .menu ul li a:hover {
     background-color: #ccd0d2;
 }
 
-.container header nav .menu .menu-logo {
+header nav .menu .menu-logo {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -165,13 +165,13 @@ ul {
     height: 100px;
 }
 
-.container .hero {
+.hero {
     height: 90vh;
     width: 100vw;
     position: relative;
 }
 
-.container .hero h1 {
+.hero h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #ccd0d2;
@@ -181,7 +181,7 @@ ul {
     transform: translate(-50%,-50%);
 }
 
-.container .hero h2 {
+.hero h2 {
     font-size: 8rem;
     font-weight: 700;
     width: 1000px;
@@ -194,7 +194,7 @@ ul {
     transform: translate(-50%,-50%);
 }
 
-.container .hero a {
+.hero a {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 2px;
@@ -209,7 +209,7 @@ ul {
     transform: translate(-50%,-50%);
 }
 
-.container .hero a:hover {
+.hero a:hover {
     background-color: white;
     color: black;
 }
@@ -272,6 +272,7 @@ ul {
 .banner {
     height: 30vh;
     width: 100vw;
+    margin-bottom: 25rem;
 }
 
 .banner h1 {
@@ -309,4 +310,41 @@ ul {
 .banner .btn3:hover {
     background-color: red;
     color: white;
+}
+
+.features {
+    height: auto;
+    width: 100vw;
+}
+
+.feature-box {
+    height: 400px;
+    width: 1200px;
+    background-color: #ccd0d2;
+    margin: 5rem auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.feature-box:hover .cover {
+    top: -100%;
+}
+
+.feature-box .cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.feature-box .cover h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+
 }
